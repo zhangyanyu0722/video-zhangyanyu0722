@@ -67,11 +67,11 @@ set yrange[0:2]
 plot 'thread_cpu_bound.dat' using 1:4 title 'IoThread', \
      'thread_cpu_bound.dat' using 1:5 title 'IoProcess'
 ```
-<p>
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/4.png" width= 300>
+<p align="middle">
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/4.png" width= 500>
 </p>
-<p>
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/5.png" width= 300>
+<p align="middle">
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/5.png" width= 500>
 </p>
 
 - Exit the gnuplot envs and will see the .png file
@@ -79,20 +79,15 @@ plot 'thread_cpu_bound.dat' using 1:4 title 'IoThread', \
   <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/thread_cpu_bound.tmp.png" width= 500>
 </p>
 
-
-
-
-
-
-
-
-
-
-
+## Install FFMPEG
+- To install the FFmpeg easily
+```
+brew install ffmpeg
+```
 
 # Summary
-### Multiprocessing
-#### Pros
+## Multiprocessing
+### Pros
 - Separate memory space
 - Code is usually straightforward
 - Takes advantage of multiple CPUs & cores
@@ -101,18 +96,18 @@ plot 'thread_cpu_bound.dat' using 1:4 title 'IoThread', \
 - Child processes are interruptible/killable
 - Python ```multiprocessing module``` includes useful abstractions with an interface much like ```threading.Thread```
 - A must with cPython for CPU-bound processing
-#### Cons
+### Cons
 - IPC a little more complicated with more overhead (communication model vs. shared memory/objects)
 - Larger memory footprint
 
-### Threading
-#### Pros
+## Threading
+### Pros
 - Lightweight - low memory footprint
 - Shared memory - makes access to state from another context easier
 - Allows you to easily make responsive UIs
 - cPython C extension modules that properly release the GIL will run in parallel
 - Great option for I/O-bound applications
-#### Cons
+### Cons
 - cPython - subject to the GIL
 - Not interruptible/killable
 - If not following a command queue/message pump model (using the Queue module), then manual use of synchronization primitives become a necessity (decisions are needed for the granularity of locking)
