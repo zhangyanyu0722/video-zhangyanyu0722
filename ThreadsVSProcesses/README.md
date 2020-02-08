@@ -5,7 +5,7 @@
 - Please run and test the code provided in (Python Threads Versus Processes) and compare processes and threads
 - Install FFMPEG
 
-# Result 
+# Steps and Results
 ## Run and test the code and compare processes and threads
 - First, install Gnuplot (http://macappstore.org/gnuplot/)
 ```
