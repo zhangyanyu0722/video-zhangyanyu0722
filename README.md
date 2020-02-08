@@ -1,9 +1,6 @@
 # FFmpeg
 
-## Study the following: 
-<p align="center">
-  <a href="https://github.com/BUEC500C1/video-zhangyanyu0722/edit/master/README.md">Click here</a>
-</p>
+## Study the following: [Click here]
 - Python processes and subprocesses (https://docs.python.org/3/library/subprocess.html)
 - Python Threads (https://docs.python.org/3/library/threading.html)
 - Python Threads Versus Processes (https://stackoverflow.com/questions/3044580/multiprocessing-vs-threading-python)
@@ -20,3 +17,4 @@
 - Implement the module
 - Include tracking interface to show how many processes are going on and success of each
 
+[Click here]: https://github.com/BUEC500C1/video-zhangyanyu0722/edit/master
