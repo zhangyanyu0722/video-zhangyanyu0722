@@ -1,7 +1,8 @@
 # FFmpeg
 
-## Study the following: <p align="center">
-  <a href="https://docs.google.com/presentation/d/11-jlRNnnwyELKESdG6k7fvwvgQGAvKY6rJiQV4QFgRs/edit?usp=sharing">Click here</a>
+## Study the following: 
+<p align="center">
+  <a href="https://github.com/BUEC500C1/video-zhangyanyu0722/edit/master/README.md">Click here</a>
 </p>
 - Python processes and subprocesses (https://docs.python.org/3/library/subprocess.html)
 - Python Threads (https://docs.python.org/3/library/threading.html)
