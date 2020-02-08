@@ -1,9 +1,9 @@
 # FFmpeg
 
 ## Study the following: [Click here]
-- Python processes and subprocesses (https://docs.python.org/3/library/subprocess.html)
-- Python Threads (https://docs.python.org/3/library/threading.html)
-- Python Threads Versus Processes (https://stackoverflow.com/questions/3044580/multiprocessing-vs-threading-python)
+- Python processes and subprocesses [View]
+- Python Threads [View.]
+- Python Threads Versus Processes [View..]
 - Please run and test the code provided in (Python Threads Versus Processes) and compare processes and threads
 - Install FFMPEG
 
@@ -28,3 +28,6 @@
 
 [Click here]: https://github.com/BUEC500C1/video-zhangyanyu0722/tree/master/ThreadsVSProcesses
 [Click here.]: https://github.com/BUEC500C1/video-zhangyanyu0722/tree/master/FFmpeg
+[View]: https://docs.python.org/3/library/subprocess.html
+[View.]: https://docs.python.org/3/library/threading.html
+[View..]: https://stackoverflow.com/questions/3044580/multiprocessing-vs-threading-python
