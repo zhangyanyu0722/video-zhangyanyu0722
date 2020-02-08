@@ -1,8 +1,14 @@
 # FFmpeg
-## Preparation:
+## Steps and results:
 ### Use FFmpeg to re-encode a video file (MOV, or MP4) to two bitrates:
 - 720p at 2Mbps and 30fps
+```
+ffmpeg -i BU_football.mp4 -c:a copy -c:v copy -r 30 -s hd720 -b:v 2M BU_football_30_720.mp4
+```
 - 480p at 1Mbps and 30fps
+```
+ffmpeg -i BU_football.mp4 -c:a copy -c:v copy -r 30 -s hd480 -b:v 1M BU_football_30_480.mp4
+```
 ### Using the twitter feed, construct a daily video summarizing a twitter handle day
 - Convert text into an image in a frame
 - Do a sequence of all texts and images in chronological order.
