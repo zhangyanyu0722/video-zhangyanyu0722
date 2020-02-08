@@ -79,6 +79,11 @@ plot 'thread_cpu_bound.dat' using 1:4 title 'IoThread', \
   <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/thread_cpu_bound.tmp.png" width= 500>
 </p>
 
+### Conclusions from the picture above :
+- For CPU bound work, multiprocessing is always faster, presumably due to the GIL
+- For IO bound work. both are exactly the same speed
+- Threads only scale up to about 4x instead of the expected 8x since I'm on an 8 hyperthread machine.
+
 ## Install FFMPEG
 - To install the FFmpeg easily
 ```
