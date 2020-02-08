@@ -5,7 +5,92 @@
 - Please run and test the code provided in (Python Threads Versus Processes) and compare processes and threads
 - Install FFMPEG
 
-## Summary
+# Result 
+## Run and test the code and compare processes and threads
+- First, install Gnuplot (http://macappstore.org/gnuplot/)
+```
+brew install gnuplot
+```
+
+- Second, run ThreadsVSProcesses.py
+```
+python ThreadsVSProcesses.py CPU_Num
+```
+<p align="middle">
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/1.png" width= 500>
+</p>
+
+- Then saved the data in a file named "thread_cpu_bound.dat"
+<p align="middle">
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/2.png" width= 500>
+</p>
+
+- Enter the gnuplot in terminal to enter the envs
+```
+gnuplot
+```
+<p align="middle">
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/3.png" width= 500>
+</p>
+
+- Run "thread_cpu_bound.gnuplot" in the terminal
+```
+set terminal png size 600, 1200
+set style data linespoints
+set output 'thread_cpu_bound.tmp.png'
+set key autotitle columnhead
+set multiplot layout 4,1 title "Python Threads vs Processes with 8 hyperthreads" font ",18"
+set title font ",14"
+
+set title 'CPU bound'
+set key left top
+set xlabel "threads"
+set ylabel "time (s)"
+plot 'thread_cpu_bound.dat' using 1:2, \
+     'thread_cpu_bound.dat' using 1:3
+
+set title 'CPU bound / threads'
+set key right center
+set yrange [0:*]
+plot 'thread_cpu_bound.dat' using 1:($2/$1) title 'CpuThread', \
+     'thread_cpu_bound.dat' using 1:($3/$1) title 'CpuProcess'
+
+set title 'Thread / Process ratio'
+set ylabel "ratio"
+set yrange [0:*]
+plot 'thread_cpu_bound.dat' using 1:($2/$3) notitle
+
+set title 'IO bound'
+set key default
+set ylabel "time (s)"
+set yrange[0:2]
+plot 'thread_cpu_bound.dat' using 1:4 title 'IoThread', \
+     'thread_cpu_bound.dat' using 1:5 title 'IoProcess'
+```
+<p align="middle">
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/4.png" width= 500>
+</p>
+<p align="middle">
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/5.png" width= 500>
+</p>
+
+- Exit the gnuplot envs and will see the .png file
+<p align="middle">
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/thread_cpu_bound.tmp.png" width= 500>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+# Summary
 ### Multiprocessing
 #### Pros
 - Separate memory space
