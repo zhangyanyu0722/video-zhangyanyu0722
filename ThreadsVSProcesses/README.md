@@ -1,15 +1,13 @@
-# FFmpeg
-
-## Study the following:
+# Study the following:
 - Python processes and subprocesses (https://docs.python.org/3/library/subprocess.html)
 - Python Threads (https://docs.python.org/3/library/threading.html)
 - Python Threads Versus Processes (https://stackoverflow.com/questions/3044580/multiprocessing-vs-threading-python)
 - Please run and test the code provided in (Python Threads Versus Processes) and compare processes and threads
 - Install FFMPEG
 
-### Summary
-#### Multiprocessing
-##### Pros
+## Summary
+### Multiprocessing
+#### Pros
 - Separate memory space
 - Code is usually straightforward
 - Takes advantage of multiple CPUs & cores
@@ -18,30 +16,22 @@
 - Child processes are interruptible/killable
 - Python ```multiprocessing module``` includes useful abstractions with an interface much like ```threading.Thread```
 - A must with cPython for CPU-bound processing
-##### Cons
+#### Cons
 - IPC a little more complicated with more overhead (communication model vs. shared memory/objects)
 - Larger memory footprint
 
-#### Threading
-##### Pros
+### Threading
+#### Pros
 - Lightweight - low memory footprint
 - Shared memory - makes access to state from another context easier
 - Allows you to easily make responsive UIs
 - cPython C extension modules that properly release the GIL will run in parallel
 - Great option for I/O-bound applications
-##### Cons
+#### Cons
 - cPython - subject to the GIL
 - Not interruptible/killable
 - If not following a command queue/message pump model (using the Queue module), then manual use of synchronization primitives become a necessity (decisions are needed for the granularity of locking)
 - Code is usually harder to understand and to get right - the potential for race conditions increases dramatically
 
-## Exercise: FFmpeg
-### Task 1:
-- Estimate the processing power need to execute such operations on your computer
-- Estimate the maximum number of such operations that can run on your system
 
-### Task 2:
-- Design a module that can queue and process videos and notify the caller when the videos are ready
-- Implement the module
-- Include tracking interface to show how many processes are going on and success of each
 

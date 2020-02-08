@@ -1,0 +1,1 @@
+Tested on Ubuntu 18.10, Python 3.6.7, in a Lenovo ThinkPad P51 laptop with CPU: Intel Core i7-7820HQ CPU (4 cores / 8 threads), RAM: 2x Samsung M471A2K43BB1-CRC (2x 16GiB), SSD: Samsung MZVLB512HAJQ-000L7 (3,000 MB/s).
