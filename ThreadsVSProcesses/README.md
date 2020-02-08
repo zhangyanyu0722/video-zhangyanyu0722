@@ -22,7 +22,7 @@ python ThreadsVSProcesses.py CPU_Num
 
 - Then saved the data in a file named "thread_cpu_bound.dat"
 <p align="middle">
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/2.png" width= 500>
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/2.png" width= 200>
 </p>
 
 - Enter the gnuplot in terminal to enter the envs
@@ -67,11 +67,11 @@ set yrange[0:2]
 plot 'thread_cpu_bound.dat' using 1:4 title 'IoThread', \
      'thread_cpu_bound.dat' using 1:5 title 'IoProcess'
 ```
-<p align="middle">
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/4.png" width= 500>
+<p>
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/4.png" width= 300>
 </p>
-<p align="middle">
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/5.png" width= 500>
+<p>
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/ThreadsVSProcesses/Picture/5.png" width= 300>
 </p>
 
 - Exit the gnuplot envs and will see the .png file
