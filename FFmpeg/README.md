@@ -10,10 +10,12 @@ ffmpeg -i BU_football.mp4 -c:a copy -c:v copy -r 30 -s hd720 -b:v 2M BU_football
 ffmpeg -i BU_football.mp4 -c:a copy -c:v copy -r 30 -s hd480 -b:v 1M BU_football_30_480.mp4
 ```
 - For more infomation, view [here]
-### Using the twitter feed, construct a daily video summarizing a twitter handle day
+### Using the twitter feed, construct a daily video summarizing a twitter handle day [Click Here]
 - Convert text into an image in a frame
 - Do a sequence of all texts and images in chronological order.
 - Display each video frame for 3 seconds
+
+### To review the Video, [CLICK]
   
 ## Task 1:
 - Estimate the processing power need to execute such operations on your computer
@@ -25,3 +27,5 @@ ffmpeg -i BU_football.mp4 -c:a copy -c:v copy -r 30 -s hd480 -b:v 1M BU_football
 - Include tracking interface to show how many processes are going on and success of each
 
 [here]: https://opensource.com/article/17/6/ffmpeg-convert-media-file-formats
+[Click Here]: https://github.com/BUEC500C1/video-zhangyanyu0722/tree/master/FFmpeg/Twitter_feed
+[CLICK]: https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/FFmpeg/Twitter_feed/twitter.avi
