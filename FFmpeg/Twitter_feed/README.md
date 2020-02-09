@@ -27,6 +27,14 @@ pyrhon image2video.py
 ```
 Explain: In this code, I set the fps = 1/3, which means three seconds per image in the video.
 
+## Result
+- The result can download [twitter.avi] 
+- Also convert to [twitter.mov] by [FFmpeg]
+
+
+[twitter.avi]: https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/FFmpeg/Twitter_feed/twitter.avi
+[twitter.mov]: https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/FFmpeg/Twitter_feed/twitter.mov
+[FFmpeg]: https://github.com/BUEC500C1/video-zhangyanyu0722/tree/master/FFmpeg
 
 
 
