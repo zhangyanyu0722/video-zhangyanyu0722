@@ -12,7 +12,7 @@ search_results = api.user_timeline('CNN')
 ```
 - Prepare a background picture for your images, the image below is what I used in this demo.
 <p align="middle">
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/FFmpeg/Twitter_feed/origin.png" width= 500>
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/FFmpeg/Twitter_feed/origin.png" width= 400>
 </p>
 
 ## Making your own image sets
