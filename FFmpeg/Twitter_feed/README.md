@@ -21,6 +21,11 @@ search_results = api.user_timeline('CNN')
 python tweepy_get.py
 ```
 Explain : In my code, I used the tweepy API and get the latest 20 tweets from "CNN", and delate all emojis. Then add a return for every 50 letters. Finally saved each tweet in a prapared background.
+
+<p align="middle">
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/FFmpeg/Twitter_feed/result.png" width= 400>
+</p>
+
 - Run the ```image2video.py```, you need to change the path and the image size.
 ```
 python image2video.py
