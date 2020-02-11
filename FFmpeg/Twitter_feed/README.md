@@ -23,7 +23,7 @@ python tweepy_get.py
 Explain : In my code, I used the tweepy API and get the latest 20 tweets from "CNN", and delate all emojis. Then add a return for every 50 letters. Finally saved each tweet in a prapared background.
 - Run the ```image2video.py```, you need to change the path and the image size.
 ```
-pyrhon image2video.py
+python image2video.py
 ```
 Explain: In this code, I set the fps = 1/3, which means three seconds per image in the video.
 
