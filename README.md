@@ -17,17 +17,19 @@
 - Do a sequence of all texts and images in chronological order.
 - Display each video frame for 3 seconds
   
-## Task 1: (Unfinished)
+## Task 1: [Click here..]
 - Estimate the processing power need to execute such operations on your computer
 - Estimate the maximum number of such operations that can run on your system
 
-## Task 2: (Unfinished)
+## Task 2: [Click here...]
 - Design a module that can queue and process videos and notify the caller when the videos are ready
 - Implement the module
 - Include tracking interface to show how many processes are going on and success of each
 
 [Click here]: https://github.com/BUEC500C1/video-zhangyanyu0722/tree/master/ThreadsVSProcesses
 [Click here.]: https://github.com/BUEC500C1/video-zhangyanyu0722/tree/master/FFmpeg
+[Click here..]: https://github.com/BUEC500C1/video-zhangyanyu0722/tree/master/task1
+[Click here...]: https://github.com/BUEC500C1/video-zhangyanyu0722/tree/master/task2
 [View]: https://docs.python.org/3/library/subprocess.html
 [View.]: https://docs.python.org/3/library/threading.html
 [View..]: https://stackoverflow.com/questions/3044580/multiprocessing-vs-threading-python
