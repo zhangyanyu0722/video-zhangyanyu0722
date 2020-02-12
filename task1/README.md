@@ -54,7 +54,7 @@ ffmpeg -i BU_football.mp4 -c:a copy -c:v copy -r 30 -s hd720 -b:v 2M BU_football
 </p>
 So the CPU ussage has 4 columns.
 
-- During run the FFmpeg command, the total CPU% reach 90%. But from the CPU ussage columns, we can easily see the first and third threads only use about 40%. It means the Dual-core four-thread CPU has total 200% CPU ussages.
+- During run the FFmpeg command, the total CPU% reach 90%. But from the CPU ussage columns, we can easily see the first and third threads only use about 40%, while the second and fourth nearly 0%. It means the Dual-core four-thread CPU has total 400% CPU ussages.
 
 - Maximum number of FFmpeg operations that can run on your system at the same time is 2.
 
