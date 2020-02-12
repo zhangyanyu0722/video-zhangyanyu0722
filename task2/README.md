@@ -35,10 +35,8 @@ ffmpeg_queue.sh
   <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/3.png" width= 400>
 </p>
 
-- From the terminal, to surpervise the CPU ussage:
-```
-top
-```
+- From the terminal, use ```top```to surpervise the CPU ussage:
+
 <p align="middle">
   <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/5.png" width= 400>
 </p>
