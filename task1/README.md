@@ -56,7 +56,7 @@ So the CPU ussage has 4 columns.
 
 - During run the FFmpeg command, the total CPU% reach 90%. But from the CPU ussage columns, we can easily see the first and third threads only use about 40%, while the second and fourth nearly 0%. It means the Dual-core four-thread CPU has total 400% CPU ussages.
 
-- Maximum number of FFmpeg operations that can run on your system at the same time is 2.
+- Maximum number of FFmpeg operations that can run on your system at the same time is 400% / 90% = 4.
 
 
 
