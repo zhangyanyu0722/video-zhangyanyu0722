@@ -24,7 +24,7 @@ ffmpeg_queue.sh
   <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/33.png" width= 400>
 </p>
 
-- If run set 4 videos' transforation at the same time. We can see 400% CPU usaage
+- If run set 4 videos' transforation at the same time. We can see 360% CPU usaage
 <p align="middle">
   <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/1.png" width= 400>
 </p>
@@ -34,10 +34,13 @@ ffmpeg_queue.sh
 <p align="middle">
   <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/3.png" width= 400>
 </p>
-<p align="middle">
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/4.png" width= 400>
-</p>
+From the terminal, use the ```top``` to surpervise :
 <p align="middle">
   <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/5.png" width= 400>
+</p>
+
+- After terminate the task, CPU decrease to nearly 0%
+<p align="middle">
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/4.png" width= 400>
 </p>
 
