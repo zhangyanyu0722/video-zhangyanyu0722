@@ -1,9 +1,9 @@
 # FFmpeg
 
 ## Task 2: 
-- Design a module that can queue and process videos and notify the caller when the videos are ready
-- Implement the module
-- Include tracking interface to show how many processes are going on and success of each
+- Develop a queue system that can exercise your requirements with stub functions
+- Develop the twitter functionality with an API
+- Integrate them
 
 ## Test
 - Run the command below to access .sh and run it
