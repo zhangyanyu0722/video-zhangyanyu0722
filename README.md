@@ -7,7 +7,7 @@
 - Please run and test the code provided in (Python Threads Versus Processes) and compare processes and threads
 - Install FFMPEG
 
-## Exercise: FFmpeg: [Click here.]
+## Main Exercise: FFmpeg: [Click here.]
 ### Preparation:
 #### Use FFmpeg to re-encode a video file (MOV, or MP4) to two bitrates:
 - 720p at 2Mbps and 30fps
