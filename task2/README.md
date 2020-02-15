@@ -18,5 +18,9 @@ python queue_sys.py
 <p align="middle">
   <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/picture/3.png" width= 200>
 </p>
+- The output are ten videos named with their own twitter name
+<p align="middle">
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/picture/out.png" width= 400>
+</p>
 
 
