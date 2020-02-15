@@ -6,43 +6,19 @@
 - Integrate them
 
 ## Test
-- Run the command below to access .sh and run it
+- Run the file ```queue_sys.py```
 ```
-chmod 777 ffmpeg_queue.sh
+python queue_sys.py
 ```
-```
-ffmpeg_queue.sh
-```
-- The results are showing below, it occupies about 12% CPU
+
+## Solution
+- In this task, I build a queue and test with 10 twitter users('BU_Tweets', 'BU_ece', 'BostonDynamics', 'realDonaldTrump', 'WHO', 'TIME', 'celtics', 'nytimes', 'washingtonpost', 'BillGates')
+
+
+
+
 <p align="middle">
   <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/11.png" width= 400>
 </p>
-<p align="middle">
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/22.png" width= 400>
-</p>
-<p align="middle">
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/33.png" width= 400>
-</p>
 
-- If run set 4 videos' transforation at the same time. We can see 360% CPU ussage
-<p align="middle">
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/1.png" width= 400>
-</p>
-<p align="middle">
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/2.png" width= 400>
-</p>
-<p align="middle">
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/3.png" width= 400>
-</p>
-
-- From the terminal, use ```top```to surpervise the CPU ussage:
-
-<p align="middle">
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/5.png" width= 400>
-</p>
-
-- After terminate the task, CPU ussage decrease to nearly 0%
-<p align="middle">
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/4.png" width= 400>
-</p>
 
