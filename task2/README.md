@@ -16,7 +16,7 @@ python queue_sys.py
 - Get the status of four threads on my MAC, then ```q.put(item)``` for each of them from the queue.
 - In the activity monitor, the ussage of four threads are showing below:
 <p align="middle">
-  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/img/11.png" width= 400>
+  <img src= "https://github.com/BUEC500C1/video-zhangyanyu0722/blob/master/task2/picture/3.png" width= 200>
 </p>
 
 
