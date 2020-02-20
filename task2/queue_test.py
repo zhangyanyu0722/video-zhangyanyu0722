@@ -7,7 +7,7 @@ import threading
 import queue
 import os
 
-def worker():
+def worker(q):
   i = 0
   while True:
     item = q.get()
@@ -25,7 +25,7 @@ def queue_1(keyNames, number_thread):
   threads = []
 
   for i in range(number_thread):
-    t = threading.Thread(target=worker)
+    t = threading.Thread(target=worker(q))
     t.start()
     threads.append(t)
 
