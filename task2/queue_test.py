@@ -40,7 +40,7 @@ def queue_1(keyNames, number_thread):
   for t in threads:
     t.join()
 
-def queue_test():
+def test_queue():
   keyNames = ['BU_Tweets', 'BU_ece', 'BostonDynamics', 'realDonaldTrump', 'WHO', 'TIME', 'celtics', 'nytimes', 'washingtonpost', 'BillGates']
   number_thread = 4
   queue_1(keyNames, number_thread)
