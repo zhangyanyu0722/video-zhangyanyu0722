@@ -27,7 +27,7 @@ jobs:
     - name: Install tweepy and PIL
       run: |
         pip install tweepy
-        pip install PIL
+        pip install Pillow
     - name: Test with pytest
       run: |
         pip install pytest
