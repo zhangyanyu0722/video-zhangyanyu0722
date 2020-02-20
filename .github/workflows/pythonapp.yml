@@ -31,7 +31,7 @@ jobs:
         pip install opencv-python
         pip install numpy
         pip install multiprocess
-        pip install threading2
+        pip install threaded
     - name: Test with pytest
       run: |
         pip install pytest
