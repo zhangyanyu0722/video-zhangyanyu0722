@@ -1,6 +1,6 @@
 # FFmpeg
 
-## Study the following: [Click here]
+## Threads VS Processes: [Click here]
 - Python processes and subprocesses [View]
 - Python Threads [View.]
 - Python Threads Versus Processes [View..]
