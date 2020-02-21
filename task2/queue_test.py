@@ -9,10 +9,12 @@ import queue
 import os
 
 
+keyNames = ['BU_Tweets', 'BU_ece', 'BostonDynamics', 'realDonaldTrump', 'WHO', 'TIME', 'celtics', 'nytimes', 'washingtonpost', 'BillGates']
+number_thread = 4
+queue_1(keyNames, number_thread)
 
 def test_queue():
   pass
-
 # *****************************************************************************************************
 # If you want to test the following part, please input the twitter API KEY in the key.txt
 # *****************************************************************************************************
