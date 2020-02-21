@@ -12,11 +12,9 @@ def test_twitter_get():
   keyNames = ['BU_Tweets', 'BU_ece', 'BostonDynamics', 'realDonaldTrump', 'WHO', 'TIME', 'celtics', 'nytimes', 'washingtonpost', 'BillGates']
   for key in keyNames:
     tweepy_get(key)
-  assert os.path.exists('img/BU_Tweets10.png')
-  assert os.path.exists('img/BostonDynamics11.png')
-  assert os.path.exists('img/realDonaldTrump12.png')
-  assert os.path.exists('img/WHO14.png')
-  assert os.path.exists('img/TIME15.png')
+  assert os.path.exists('img/BU_Tweets1.png') = True
+  assert os.path.exists('img/BostonDynamics11.png') = True
+  assert os.path.exists('img/realDonaldTrump12.png') = True
 
     
 # *****************************************************************************************************
