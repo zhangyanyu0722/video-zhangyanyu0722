@@ -5,7 +5,7 @@ import os
 import os.path
 import configparser
 
-def tweepy_get(keyword):
+def tweepy_get(keyword, path):
 	config = configparser.ConfigParser()
 	config.read(path)
 	auth = tweepy.OAuthHandler(config.get('auth', 'consumer_key').strip(), config.get('auth', 'consumer_secret').strip())
