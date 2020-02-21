@@ -2,14 +2,19 @@ import tweepy
 import re
 from PIL import Image, ImageDraw, ImageFont
 import os
+import configparser
+
 def tweepy_get(keyword):
-	consumer_key = ''
-	consumer_secret = ''
-	access_token = ''
-	access_token_secret = ''
-  
-	auth = tweepy.OAuthHandler(consumer_key, consumer_secret)  
-	auth.set_access_token(access_token, access_token_secret)   
+	config = configparser.ConfigParser()
+	config.read(path)
+	# consumer_key = ''
+	# consumer_secret = ''
+	# access_token = ''
+	# access_token_secret = ''
+	auth = tweepy.OAuthHandler(config.get('auth', 'consumer_key').strip(), config.get('auth', 'consumer_secret').strip())
+	auth.set_access_token(config.get('auth', 'access_token').strip(), config.get('auth', 'access_secret').strip())
+	# auth = tweepy.OAuthHandler(consumer_key, consumer_secret)  
+	# auth.set_access_token(access_token, access_token_secret)   
 	api = tweepy.API(auth)
 
 	search_results = api.user_timeline(keyword)
