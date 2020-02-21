@@ -6,15 +6,9 @@ import configparser
 
 def tweepy_get(keyword):
 	config = configparser.ConfigParser()
-	config.read('keys.txt')
-	# consumer_key = ''
-	# consumer_secret = ''
-	# access_token = ''
-	# access_token_secret = ''
+	a = config.read('../keys.txt')
 	auth = tweepy.OAuthHandler(config.get('auth', 'consumer_key').strip(), config.get('auth', 'consumer_secret').strip())
-	auth.set_access_token(config.get('auth', 'access_token').strip(), config.get('auth', 'access_secret').strip())
-	# auth = tweepy.OAuthHandler(consumer_key, consumer_secret)  
-	# auth.set_access_token(access_token, access_token_secret)   
+	auth.set_access_token(config.get('auth', 'access_token').strip(), config.get('auth', 'access_token_secret').strip())  
 	api = tweepy.API(auth)
 
 	search_results = api.user_timeline(keyword)

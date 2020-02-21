@@ -10,38 +10,36 @@ import multiprocessing
 import time
 import threading
 
-keyNames = ['BU_Tweets', 'BU_ece', 'BostonDynamics', 'realDonaldTrump', 'WHO', 'TIME', 'celtics', 'nytimes', 'washingtonpost', 'BillGates']
-number_thread = 4
+def queue_1(keyNames, number_thread):
+  def worker():
+    i = 0
+    while True:
+      item = q.get()
+      if item is None:
+        print("Break ! Because item is None")
+        break
+      tweepy_get(item)
+      image_to_video(item)
+      i += 1
+      print("---------------Thread Done--------------")
+      q.task_done()
 
-def worker():
-  i = 0
-  while True:
-    item = q.get()
-    if item is None:
-      print("Break ! Because item is None")
-      break
-    tweepy_get(item)
-    image_to_video(item)
-    i += 1
-    print("---------------Thread Done--------------")
-    q.task_done()
+  q = queue.Queue()
+  threads = []
 
-q = queue.Queue()
-threads = []
+  for i in range(number_thread):
+    t = threading.Thread(target=worker)
+    t.start()
+    threads.append(t)
 
-for i in range(number_thread):
-  t = threading.Thread(target=worker)
-  t.start()
-  threads.append(t)
+  for item in keyNames:
+    q.put(item)
 
-for item in keyNames:
-  q.put(item)
+  q.join()
 
-q.join()
+  for i in range(number_thread):
+    q.put(None)
 
-for i in range(number_thread):
-  q.put(None)
-
-for t in threads:
-  t.join()
+  for t in threads:
+    t.join()
 
