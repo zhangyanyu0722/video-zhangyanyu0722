@@ -16,7 +16,7 @@ def queue_1(keyNames, number_thread):
     while True:
       item = q.get()
       if item is None:
-        print("Break ! Because item is None")
+        print("Break ! Because queue is empty")
         break
       tweepy_get(item)
       image_to_video(item)
