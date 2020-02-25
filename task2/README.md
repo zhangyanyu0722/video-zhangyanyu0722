@@ -6,7 +6,7 @@
 - Integrate them
 
 ## Test
-- Enter your twitter API Key in the keys.txt. Then run the file ```queue_test.py```
+- Enter your twitter API Key in the keys. Then run the file ```queue_test.py```
 ```
 python queue_test.py
 ```
